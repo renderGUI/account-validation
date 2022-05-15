@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #202020;
+  width: 50%;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  row-gap: 50px;
+}
+
+.username-input,
+.password-input,
+.button {
+  font-size: 1.125rem;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 2px;
+}
+
+.username-input,
+.password-input {
+  border: none;
+  outline: 1px solid #686868;
+  background-color: #202020;
+  color: #ffffff;
+  padding-left: 20px;
+  width: 75%;
+}
+
+.username-input::placeholder,
+.password-input::placeholder {
+  color: #c1c1c1;
+}
+
+.username-input:focus::placeholder,
+.password-input:focus::placeholder {
+  color: transparent;
+}
+
+.checkbox {
+  ;
+}
+
+.button {
+  border: none;
+  background-color: #3172dc;
+  color: #ffffff;
+  transition: 0.2s ease-in-out;
+  width: 40%;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: #4787e1;
+}
+
+.button:disabled,
+.button:focus:disabled,
+.button:hover:disabled,
+.button:active:disabled {
+  background: #4d4d4d;
+  color: #686868;
+  cursor: not-allowed;
+}
